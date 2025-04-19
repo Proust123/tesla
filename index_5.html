@@ -1,0 +1,3609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Model Y</title>
+
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+            
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(  ./images/Model-Y-Main-Hero-Desktop-Global.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec1_navbar{
+            height : 80px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+            /* position: fixed; */
+        }
+        .sec1_logo{
+            height : 20px;
+            width : 150px;
+            /* border : 1px solid; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            margin-top: 57px;
+            background-image: url(./images/PngItem_1068175.png);
+            color: white;
+            background-position: center;
+            background-size: cover;
+        }
+        .list1{
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+            /* border : 1px solid; */
+            cursor: pointer;
+            border-radius: 3px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            position: relative;
+            color : white;
+            font-weight: 500;
+        }
+        .list1:hover{
+            background-color: gray;
+        }
+        .list2{
+            list-style: none;
+            display: inline-block;
+            margin-left: 30px;
+            border-radius: 3px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            cursor: pointer;
+            position: relative;
+            color : white;
+            font-weight: 500;
+        }
+        .list2:hover{
+            background-color: gray;
+        }
+        .sec1_ul1{
+            /* border : 1px solid; */
+            width : max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            margin-top: 55px;
+        }
+        .models_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .models_category{
+            visibility: visible;
+        }
+        .modelscate_text{
+            font-weight: 100;
+            text-align: center;
+            color : black
+        }
+        .model3_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .model3_category{
+            visibility: visible;
+        }
+        .model3cate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .modelx_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .modelx_category{
+            visibility: visible;
+        }
+        .modelxcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .modely_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .modely_category{
+            visibility: visible;
+        }
+        .modelycate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .solarroof_category{
+            height : 20px;
+            width : 75px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .solarroof_category{
+            visibility: visible;
+        }
+        .solarroofcate_text{
+            font-weight: 100;
+            text-align: center;
+            color : black
+        }
+        .solarpanel_category{
+            height : 20px;
+            width : 75px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .solarpanel_category{
+            visibility: visible;
+        }
+        .solarpanelcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .sec1_ul2{
+            /* border : 1px solid; */
+            width : max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left:50px;
+            margin-top: 55px;
+
+        }
+        .shop_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .shop_category{
+            visibility: visible;
+        }
+        .shopcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .account_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .account_category{
+            visibility: visible;
+        }
+        .accountcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .menu_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .menu_category{
+            visibility: visible;
+        }
+        .menu_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .sec1name{
+            height : 110px;
+            width : 300px;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin: auto;
+            /* margin-top: 30px; */
+        }
+        .sec1name1{
+            height : 60px;
+            width : 200px;
+            /* border: 1px solid; */
+            margin: auto;
+        }  
+        .sec1name2{
+            height : 30px;
+            width : 250px;
+            /* border: 1px solid; */
+            margin: auto;
+            margin-top: 10px;
+            padding: 1px;
+        }
+        .sec1name1_text{
+            font-size: 45px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 500;
+            color: white;
+            
+        }
+        .sec1name2_text{
+            font-size: 17px;
+            text-align: center;
+            color : white;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+        .sec1_underline{
+            text-decoration: underline;
+        }
+        .sec1_underline:hover{
+            text-decoration: 2px underline;
+
+        }
+        .sec1bottom_content{
+            height : 100px;
+            width : 900px;
+            /* border  : 1px solid white; */
+            margin-top: 270px;
+            margin-left: 200px;
+        }
+        .sec1bottomcon{
+            height : 100%;
+            width : 200px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .a1_head1{
+            height : 30px;
+            width : 90px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 25px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .a1head1_icon{
+            height : 30px;
+            width : 60px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .guage1{
+            color : white;
+            font-size: 25px;
+            margin-left: 30px;
+        }
+        .a1head1_text{
+            color : white;
+            text-align: center;
+            margin-top: -5px;
+            font-size: 20px;
+        }
+        .a1_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-left: 70px;
+            margin-top: -5px;
+        }
+        .a1head2_text{
+            color : white;
+            text-align: center;
+            margin-left: 10px;
+            /* margin-top: 10px; */
+            font-size: 13px;
+        }
+        .a2_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: 15px auto;
+        }
+        .a2head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a2_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: -10px auto;
+        }
+        .a2head2_text{
+            color : white;
+            text-align: center;
+        }
+        .a3_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: 15px auto;
+        }
+        .a3head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a3_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: -10px auto;
+        }
+        .a3head2_text{
+            color : white;
+            text-align: center;
+        }
+        .a4_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: 15px auto;
+        }
+        .a4head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a4_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: -10px auto;
+        }
+        .a4head2_text{
+            color : white;
+            text-align: center;
+        }
+        .sec1bottom_btn{
+            height : 40px;
+            width : 210px;
+            border : 3px solid white;
+            background-color: transparent;
+            border-radius: 5px;
+            color : white;
+            font-size: 17px;
+            margin-top: 30px;
+            margin-left: 50px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            cursor: pointer;
+        }
+        .sec1bottom_btn:hover{
+            background-color: white;
+            color : black
+        }
+        .sec1bottom_parentcircle{
+            height : 70px;
+            width : 70px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: relative;
+            margin-left: 1200px;
+            margin-top: -60px;
+            /* background-color: white; */
+            padding: 1px;
+            position: fixed;
+            z-index: 100;
+        }
+        .circle{
+            height : 50px;
+            width : 50px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            top : 9px;
+            left : 9px;
+            
+        }
+        .circle_gradient{
+            height : 50px;
+            width : 50px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: absolute;
+            top : 9px;
+            left : 9px;
+            background-color: rgba(0, 132, 255, 0.623);
+            animation-name: spreading;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            
+        }
+        @keyframes spreading {
+            0%{
+                transform: scale(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        .dots1{
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .moving_icon{
+            height : 20px;
+            width : 22px;
+            /* border : 1px solid; */
+            margin-top: 30px;
+            margin-left: 643px;
+            animation-name: movingicon1;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        .angdown{
+            font-size: 22px;
+            color: white;
+        }
+        @keyframes movingicon1 {
+            0%{
+                margin-top: 30px;
+            }
+            25%{
+                margin-top: 38px;
+            }
+            50%{
+                margin-top: 30px;
+            }
+            75%{
+                margin-top: 34px;
+            }
+            87%{
+                margin-top: 30px;
+            }
+            100%{
+                margin-top: 30px;
+            }
+        }
+        .section2{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2_boxes_b1{
+            height : 100%;
+            width : 915px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/safety-model-y-hero.png);
+            background-position: center;
+            background-size: cover;
+            background-color: rgb(236,236,236);
+        }
+        .sec2_boxes_b2{
+            height : 100%;
+            width : 400px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+        .sec2box1_info1{
+            height : 250px;
+            width : 180px;
+            /* border : 3px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 180px;
+            margin-top: 110px;
+        }
+        .sec2box1_info2{
+            height : 180px;
+            width : 180px;
+            /* border : 3px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+            /* margin-top: 20px; */
+        }
+        .sec2box1_info3{
+            height : 200px;
+            width : 300px;
+            /* border : 3px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -30px;
+            margin-left: 420px;
+        }
+        .info1_head1{
+            height : 30px;
+            width : 180px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            margin-left: 40px;
+            margin-top: 30px;
+            animation-name: wordappear1;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes wordappear1 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .info1head1_text{
+            font-family:  "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color : rgb(57, 60, 65);
+            margin-top: 10px;
+        }
+        .info1_longline{
+            height : 150px;
+            width : 5px;
+            /* border : 2px solid green; */
+            padding: 1px;
+            /* background-color: black; */
+            margin-left: 32px;
+            margin-top: -10px;
+            position: relative;
+        }
+        .info1_line1{
+            height : 70px;
+            width : 3px;
+            background-color: black;
+            
+            animation-name: lineheight1;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes lineheight1 {
+            0%{
+                transform: translateY(70px);
+                /* height: 60px; */
+            }
+            100%{
+                transform: translateY(0px);
+                
+                /* height : 0px */
+            }
+        }
+        .info1_line2{
+            height : 80px;
+            width : 3px;
+            background-color: black;
+            
+        }
+        
+        .info1_smallcircle{
+            height : 10px;
+            width : 10px;
+            border : 2px solid;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 30px;
+            
+            /* margin-top: 10px; */
+        }
+        .info2_head1{
+            height : 30px;
+            width : 180px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            margin-left: 60px;
+            margin-top: 10px;
+            animation-name: wordappear2;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes wordappear2 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .info2head1_text{
+            font-family:  "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color : rgb(57, 60, 65);
+            margin-top: 10px;
+        }
+        .info2_longline{
+            height : 130px;
+            width : 5px;
+            /* border : 2px solid green; */
+            padding: 1px;
+            /* background-color: black; */
+            margin-left: 52px;
+            margin-top: -7px;
+            
+        }
+        .info2_line1{
+            height : 50px;
+            width : 3px;
+            background-color:black;
+            
+            animation-name: lineheight2;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes lineheight2 {
+            0%{
+                transform: translateY(50px);
+                /* height: 60px; */
+            }
+            100%{
+                transform: translateY(0px);
+                
+                /* height : 0px */
+            }
+        }
+        .info2_line2{
+            height :80px;
+            width : 3px;
+            background-color: black;
+            
+        }
+        
+        .info2_smallcircle{
+            height : 10px;
+            width : 10px;
+            border : 2px solid;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 50px;
+            /* margin-top: -40px; */
+        }
+        .info3_smallcircle{
+            height : 10px;
+            width : 10px;
+            border : 2px solid;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .info3_longline{
+            height : 130px;
+            width : 5px;
+            /* border : 2px solid green; */
+            padding: 1px;
+            /* background-color: black; */
+            margin-left: 53px;
+            margin-top: -5px;
+            
+        }
+        .info3_line1{
+            height : 80px;
+            width : 3px;
+            background-color:black;
+            margin-top: 4px;
+            
+        }
+       
+        .info3_line2{
+            height :60px;
+            width : 3px;
+            background-color: black;
+            animation-name: lineheight3;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes lineheight3 {
+            0%{
+                
+                height: 0px;
+            }
+            100%{
+                /* transform: translateY(50px); */
+                
+                height : 60px
+            }
+        }
+        .info3_head1{
+            height : 30px;
+            width : 180px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            margin-left: 60px;
+            margin-top: -10px;
+            animation-name: wordappear3;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        @keyframes wordappear3 {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .info3head1_text{
+            font-family:  "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color : rgb(57, 60, 65);
+            margin-top: 10px;
+        }
+        .sec2boxesb2_content{
+            height : 450px;
+            width : 395px;
+            /* border : 1px solid; */
+            padding : 1px;
+        }
+        .sec2boxesb2con_1{
+            height : 160px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin-top: 20px;
+        }
+        .sec2boxescon_head1{
+            height : 30px;
+            width : 90px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesconhead1_text{
+            font-size:17px ;
+            font-weight: 400;
+            color: rgb(23, 26, 32);
+        }
+        .sec2boxescon_head2{
+            height : 50px;
+            width : 280px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesconhead2_text{
+            font-size:28px ;
+            font-weight: 500;
+            color: rgb(23, 26, 32);
+        }
+        .sec2boxescon_para1{
+            height : 70px;
+            width : 350px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesconpara1_text{
+            font-size:14px ;
+            font-weight: 400;
+            color:rgb(57, 60, 65)
+        }
+        .sec2_underline1{
+            text-decoration: underline;
+        }
+        .sec2_underline1{
+            text-decoration: 2px underline;
+        }
+        .sec2boxesb2con_2{
+            height : 80px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con2_head{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con2head_text{
+            font-size:14px ;
+            font-weight: 500;
+            color: rgb(23, 26, 32);
+        }
+        .sec2boxesb2con2_para{
+            height : 40px;
+            width : 350px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con2para_text{
+            font-size:14px ;
+            font-weight: 400;
+            color:rgb(57, 60, 65)
+        }
+        .sec2boxesb2con_3{
+            height : 120px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con3_head{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con3head_text{
+            font-size:14px ;
+            font-weight: 500;
+            color: rgb(23, 26, 32);
+        }
+        .sec2boxesb2con3_para{
+            height : 80px;
+            width : 350px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2boxesb2con3para_text{
+            font-size:14px ;
+            font-weight: 400;
+            color:rgb(57, 60, 65)
+        }
+        .sec2_btn1{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec2btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn1:hover .sec2btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec2btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec2_btn2{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec2btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn2:hover .sec2btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec2btn2cate_text{
+            margin-top: 3px;
+        }
+        .section3{
+            height : 40vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec3_bottomcontent{
+            height : 200px;
+            width : 1050px;
+            /* border : 1px solid red; */
+            padding : 1px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .sec3bottomcon_box1{
+            height : 100%;
+            width : 370px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec3bottomcon_box2{
+            height : 100%;
+            width : 670px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec3bottomconbox1_head1{
+            font-size: 17px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 20px;
+        }
+        .sec3bottomconbox1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+        }
+       
+        .sec3bottomconbox2_para{
+            font-size: 16px;
+            font-weight: 400;
+            color:  rgb(57, 60, 65);
+            line-height: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .sec3_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec3btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn1:hover .sec3btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec3btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec3_btn2{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec3btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn2:hover .sec3btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec3btn2cate_text{
+            margin-top: 3px;
+        }
+        .sec3_underline1{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec3_underline1:hover{
+            text-decoration: 2px underline;
+
+        }
+        .sec3_underline2{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec3_underline2:hover{
+            text-decoration: 2px underline;
+
+        }
+        .section4{
+            height : 120vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            overflow: hidden;
+        }
+        .sec4_images{
+            height : 500px;
+            width : 1250px;
+            /* border : 1px solid; */
+            margin : auto;
+            margin-top: 30px;
+            border-radius : 17px; 
+            animation-name: imagechange;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes imagechange {
+            0%{
+                background-image: url(./images/Model-Y-Utility-B-Desktop-LHD-NA.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            50%{
+                background-image: url(./images/Model-Y-Utility-B-Desktop-LHD-NA.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            51%{
+                background-image: url(./images/Model-Y-Utility-Hero-Desktop-LHD.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(./images/Model-Y-Utility-Hero-Desktop-LHD.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .sec4_bottomcontent{
+            height : 100px;
+            width : 1200px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+        .sec4bottomcon_slide1{
+            height : 98px;
+            width : 595px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            animation-name: contentchange;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes contentchange{
+            0%{
+                visibility: visible;
+            }
+            50%{
+                visibility: visible;
+            }
+            51%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        .sec4bottomconslide1_circles{
+            height : 40px;
+            width : 100px;
+            /* border : 1px solid red; */
+            padding: 1px;
+        }
+        .sec4bottomconslide1circles_1{
+            height : 15px;
+            width : 15px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+        }
+        .sec4bottomconslide1circles_2{
+            height : 15px;
+            width : 15px;
+            border-radius: 50%;
+            background-color:rgb(208,209,210);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+
+        }
+        .sec4bottomconslide1_para{
+            font-size: 15;
+            font-weight: 400 ;
+            color : rgb(23, 26, 32);
+        }
+        .sec4bottomcon_slide2{
+            height : 98px;
+            width : 595px;
+            border : 1px solid;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            animation-name: contentchange2;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes contentchange2{
+            0%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            51%{
+                visibility:visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+        
+        .sec4bottomconslide2circles_1{
+            height : 15px;
+            width : 15px;
+            border-radius: 50%;
+            background-color: rgb(208,209,210);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+        }
+        .sec4bottomconslide2circles_2{
+            height : 15px;
+            width : 15px;
+            border-radius: 50%;
+            background-color: black;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+
+        }
+        .sec4bottomconslide2_para{
+            font-size: 15;
+            font-weight: 400 ;
+            color : rgb(23, 26, 32);
+        }
+        .section5{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec5_imagecontent{
+            height : 400px;
+            width : 100%;
+            padding : 1px;
+            background-image: url(./images/AWD_hero@2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .sec5imgcon_content{
+            height : 120px;
+            width : 820px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 240px;
+        }
+        .sec5imgconcon{
+            height: 100%;
+            width : 268px;
+            /* border : 1px solid yellow; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .e1_iconhead{
+            height : 40px;
+            width : 150px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin: auto;
+        }
+        
+        .e1head_text{
+            font-size: 30px;
+            font-weight: 500;
+            color : white;
+            /* margin-top: -7px; */
+            text-align: center;
+        }
+        .e1head{
+            height : 100%;
+            width : 70px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+        .e1_para{
+            font-size:13px ;
+            font-weight: 500;
+            color :white ;
+            text-align :center; 
+            margin-top: 5px;
+        }
+        .e2_iconhead{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .e2_icon{
+            height : 25px;
+            width : 30px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        .high1{
+            color : white;
+            font-size: 25px;
+            /* margin-left: 35px; */
+            background-color: transparent;
+        }
+        .e2_headtext{
+            font-size: 24px;
+            font-weight: 500;
+            color : white;
+            text-align: center;
+            display: inline;
+            vertical-align: top;
+        }
+        .e2_paratext{
+            font-size:13px ;
+            font-weight: 500;
+            color :white ;
+            text-align :center; 
+            margin-top: 5px;
+        }
+        .e3_icon{
+            height : 30px;
+            width : 40px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 12px;
+        }
+        .sun1{
+            color : white;
+            font-size: 30px;
+        }
+        .e3_paratext{
+            font-size:13px ;
+            font-weight: 500;
+            color :white ;
+            text-align :center; 
+            margin-top: 5px;
+        }
+        .sec5_bottomcontent{
+            height : 200px;
+            width : 1050px;
+            /* border : 1px solid red; */
+            padding : 1px;
+            margin: auto;
+            /* margin-top: -80px; */
+        }
+        .sec5bottomcon_box1{
+            height : 100%;
+            width : 370px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec5bottomcon_box2{
+            height : 100%;
+            width : 670px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec5bottomconbox1_head1{
+            font-size: 17px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 20px;
+        }
+        .sec5bottomconbox1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+        }
+       
+        .sec5bottomconbox2_para{
+            font-size: 16px;
+            font-weight: 400;
+            color:  rgb(57, 60, 65);
+            line-height: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .sec5_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec5_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec5btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec5_btn1:hover .sec5btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec5btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec5_btn2{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec5btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec5_btn2:hover .sec5btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec5btn2cate_text{
+            margin-top: 3px;
+        }
+        .section6{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+        }
+        .sec6_boxes_b1{
+            height : 100%;
+            width : 945px;
+            border : 1px solid;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .sec6_boxes_b2{
+            height : 100%;
+            width : 400px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -5px;
+        }
+        .sec6vidcon_content{
+            height : 120px;
+            width : 820px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .sec6boxesb2_content{
+            height : 450px;
+            width : 355px;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin-left: 40px;
+        }
+        .sec6boxesb2con_1{
+            height : 160px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin-top: 20px;
+        }
+        .sec6boxescon_head1{
+            height : 30px;
+            width : 90px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec6boxesconhead1_text{
+            font-size:17px ;
+            font-weight: 400;
+            color: rgb(23, 26, 32);
+        }
+        .sec6boxescon_head2{
+            height : 50px;
+            width : 200px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec6boxesconhead2_text{
+            font-size:28px ;
+            font-weight: 500;
+            color: rgb(23, 26, 32);
+        }
+        .sec6boxescon_para1{
+            height : 70px;
+            width : 350px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec6boxesconpara1_text{
+            font-size:15px ;
+            font-weight: 400;
+            color:rgb(57, 60, 65)
+        }
+        .sec6_underline1{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec6_underline1:hover{
+            text-decoration: 2px underline;
+        }
+        .sec6_underline2{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec6_underline2:hover{
+            text-decoration: 2px underline;
+        }
+        .sec6_btn1{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 50px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec6_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec6btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec6_btn1:hover .sec6btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec6btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec6_btn2{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 50px;
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec6btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec6_btn2:hover .sec6btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec6btn2cate_text{
+            margin-top: 3px;
+        }
+        .section7{
+            height : 55vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/Autopilot-Hero-Vision-Desktop.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec7_content{
+            height : 100%;
+            width : 300px;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin-left: 80px;
+        }
+        .sec7con_info1{
+            height : 110px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo1_head1{
+            height : 40px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo1head1_text{
+            font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 25px;
+            font-weight: 500;
+            color :  rgb(0, 0, 0)
+        }
+        .sec7coninfo1_para{
+            height : 50px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo1para_text{
+            font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 14px;
+            font-weight: 500;
+            
+            color :  rgb(0, 0, 0)
+        }
+        .sec7con_info2{
+            height : 110px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo2_head1{
+            height : 40px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo2head1_text{
+            font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 25px;
+            font-weight: 500;
+            color :  rgb(0, 0, 0)
+        }
+        .sec7coninfo2_para{
+            height : 50px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo2para_text{
+            font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 14px;
+            font-weight: 500;
+            
+            color :  rgb(0, 0, 0)
+        }
+        .sec7con_info3{
+            height : 110px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec7coninfo3_head1{
+            height : 50px;
+            width : 50px;
+            border : 3px solid;
+            padding: 1px;
+            border-radius: 50%;
+            
+        }
+        .sec7coninfo3head_circle{
+            height : 35px;
+            width : 35px;
+            border-radius: 50%;
+            background-color: black;
+            
+            margin : auto;
+            margin-top: 3px;
+            padding: 1px;
+        }
+        .sec7coninfo3headcircle_circle1{
+            height : 8px;
+            width : 8px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 6px;
+            margin-top: 6px;
+        }
+        .sec7coninfo3headcircle_circle2{
+            height : 4px;
+            width : 4px;
+            border-radius: 50%;
+            background-color: white;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+       
+        .sec7coninfo3_para{
+            height : 50px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-top: 5px;
+        }
+        .sec7coninfo3para_text{
+            font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif ;
+            font-size: 14px;
+            font-weight: 500;
+            
+            color :  rgb(0, 0, 0)
+        }
+        .section8{
+            height : 35vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec8_bottomcontent{
+            height : 200px;
+            width : 1050px;
+            /* border : 1px solid red; */
+            padding : 1px;
+            margin: auto;
+            /* margin-top: -80px; */
+        }
+        .sec8bottomcon_box1{
+            height : 100%;
+            width : 370px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec8bottomcon_box2{
+            height : 100%;
+            width : 670px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec8bottomconbox1_head1{
+            font-size: 17px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 20px;
+        }
+        .sec8bottomconbox1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+        }
+        .sec8_iconbox{
+            height : 60px;
+            width : 140px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .sec8bottomconbox2_para{
+            font-size: 16px;
+            font-weight: 400;
+            color:  rgb(57, 60, 65);
+            line-height: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .sec8_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec8_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec8btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec8_btn1:hover .sec8btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec8btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec8_btn2{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec8btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec8_btn2:hover .sec8btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec8btn2cate_text{
+            margin-top: 3px;
+        }
+        .section9{
+            height: 110vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec9_topcontent{
+            height : 450px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/Model-Y-Interior-Hero-Desktop-LHD.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec9_bottomcontent{
+            height : 220px;
+            width : 1050px;
+            /* border : 1px solid red; */
+            padding : 1px;
+            margin: auto;
+            /* margin-top: -40px; */
+        }
+        .sec9bottomcon_box1{
+            height : 100%;
+            width : 370px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec9bottomcon_box2{
+            height : 100%;
+            width : 670px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec9bottomconbox1_head1{
+            font-size: 17px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 20px;
+        }
+        .sec9bottomconbox1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+        }
+        .sec9_iconbox{
+            height : 60px;
+            width : 140px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .sec9bottomconbox2_para{
+            font-size: 16px;
+            font-weight: 400;
+            color:  rgb(57, 60, 65);
+            line-height: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .sec9topcon_info{
+            height : 100%;
+            width : 330px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            margin-left: auto;
+        }
+        .sec9topconinfo{
+            height : 100px;
+            width : 100%;
+            /* border : 1px solid green; */
+            padding: 1px;
+            margin-top: 45px;
+        }
+        .f1_head{
+            font-size: 23px;
+            font-weight: 500;
+            color : white;
+            margin-top: 5px;
+        }
+        .f1_para{
+            font-size: 14px;
+            font-weight: 500;
+            color : white;
+            line-height: 18px;
+        }
+        .f2_icon{
+            height : 35px;
+            width : 35px;
+            /* border : 1px solid white; */
+            padding: 1px;
+        }
+        .wifi1{
+            color : white;
+            font-size: 25px;
+        }
+        .f2_para{
+            font-size: 14px;
+            font-weight: 500;
+            color : white;
+            line-height: 18px;
+        }
+        .f3_icon{
+            height : 35px;
+            width : 90px;
+            /* border : 1px solid white; */
+            padding: 1px;
+        }
+        .car1{
+            color : white;
+            font-size: 35px;
+        }
+        .f3_para{
+            font-size: 14px;
+            font-weight: 500;
+            color : white;
+            line-height: 18px;
+        }
+        .sec9_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec9_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec9btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec9_btn1:hover .sec9btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec9btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec9_btn2{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            
+            margin-top: 10px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec9btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec9_btn2:hover .sec9btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec9btn2cate_text{
+            margin-top: 3px;
+        }
+        .section10{
+            height : 160vh;
+            width : 100%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            background-color: black;
+            overflow: hidden;
+        }
+        .sec10_box1{
+            height : 80%;
+            width : 740px;
+            /* border : 1px solid white; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Model-Y-Specs-Hero-Desktop-LHD.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec10_box2{
+            height : 80%;
+            width : 600px;
+            /* border : 1px solid white; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec10_bottombtns{
+            height : 140px;
+            width : 300px;
+            /* border : 1px solid white; */
+            padding : 1px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .sec10bottombtn1{
+            height : 40px;
+            width : 200px;
+            border : 3px solid white;
+            background-color: transparent;
+            margin-left : 50px;
+            font-size : 15px;
+            font-weight: 500;
+            color : white;
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+        }
+        .sec10bottombtn1:hover{
+            background-color: white;
+            color : black
+        }
+        .sec10bottombtn1_cate{
+            height : 25px;
+            width : 110px;
+            border: 1px solid;
+            position: absolute;
+            background-color: white;
+            left: 200px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec10bottombtn1:hover .sec9bottombtn1_cate{
+            visibility: visible;
+        }
+        .sec10bottombtn1cate_text{
+            color : black;
+            margin-top: 3px;
+        }
+        .sec10bottombtn2{
+            height : 40px;
+            width : 200px;
+            border : transparent;
+            background-color: rgba(128, 128, 128, 0.267);
+            margin: auto;
+            margin-top: 20px;
+            margin-left : 50px;
+            font-size : 15px;
+            font-weight: 500;
+            color : white;
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+        }
+        .sec10bottombtn2:hover{
+            background-color: rgba(128, 128, 128, 0.726);
+        }
+        .sec10bottombtn2_cate{
+            height : 25px;
+            width : 90px;
+            border: 1px solid;
+            position: absolute;
+            background-color: white;
+            left: 200px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec10bottombtn2:hover .sec10bottombtn2_cate{
+            visibility: visible;
+        }
+        .sec10bottombtn2cate_text{
+            color : black;
+            margin-top: 3px;
+
+        }
+        
+        .sec10box2_head{
+            height : 50px;
+            width : 200px;
+            /* border : 1px solid white; */
+            padding : 1px;
+            margin-top: 50px;
+        }
+        .sec10box2head_text{
+            font-size: 28px;
+            font-weight: 500;
+            color : white;
+        }
+        .sec10box2btns{
+            height : 90px;
+            width : 530px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 30px;
+        }
+        .sec10box2_btn1{
+            height : 35px;
+            width : 250px;
+            border : 3px solid white;
+            font-size: 14px;
+            color : white;
+            font-weight: 500;
+            background-color: transparent;
+            /* margin-top: 20px; */
+            border-radius: 3px;
+            animation-name: sec10fade1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sec10fade1 {
+            0%{
+                opacity : 1
+            }
+            50%{
+                opacity: 1;
+            }
+            51%{
+                opacity: .4;
+            }
+            100%{
+                opacity: .4;
+            }
+        }
+        .sec10box2_btn2{
+            height : 35px;
+            width : 250px;
+            border : 3px solid white;
+            font-size: 14px;
+            color : white;
+            font-weight: 500;
+            background-color: transparent;
+            /* margin-top: 20px; */
+            border-radius: 3px;
+            animation-name: sec10fade2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sec10fade2 {
+            0%{
+                opacity : .4
+            }
+            50%{
+                opacity: .4;
+            }
+            51%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .sec10box2_specs{
+            height : 620px;
+            width : 1700px;
+            /* border : 1px solid red; */
+            padding: 1px;
+            margin-top: 20px;
+            
+            
+        }
+        .sec10box2specs{
+            height : 100%;
+            width : 530px;
+            /* border : 1px solid yellow; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            
+        }
+        
+        .g1_boxes{
+            height : 75px;
+            width : 250px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            animation-name: g1boxesfade;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes g1boxesfade {
+            0%{
+                opacity : 1
+            }
+            50%{
+                opacity: 1;
+            }
+            51%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        
+        .g2_boxes{
+            height : 75px;
+            width : 250px;
+            /* border : 1px solid green; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            animation-name: g2boxesfade;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes g2boxesfade {
+            0%{
+                opacity : 0
+            }
+            50%{
+                opacity: 0;
+            }
+            51%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        
+        .h3{
+            height: 90px
+        }
+        .h8{
+            height: 90px
+        }
+        .h12{
+            height: 180px
+        }
+        .i12{
+            height: 180px
+        }
+        .h1_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h2_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h3_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h4_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h5_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h6_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h7_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h8_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h9_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h10_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h11_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h12_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .h1_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h1_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h3_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h3_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h2_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h2_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h4_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h4_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h5_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h5_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h6_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h6_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h7_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h7_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h8_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h8_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h9_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h9_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h10_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h10_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h11_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h11_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .h12_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .h12_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i1_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i2_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i3_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i4_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i5_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i6_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i7_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i8_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i9_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i10_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i11_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i12_topline{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.452);
+        }
+        .i1_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i1_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i3_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i3_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i2_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i2_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i4_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i4_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i5_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i5_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i6_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i6_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i7_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i7_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i8_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i8_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i9_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i9_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i10_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i10_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i11_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i11_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .i12_head1{
+            font-size: 15px;
+            font-weight: 500;
+            color : white;
+            margin-top: 10px;
+        }
+        .i12_para{
+            font-size: 15px;
+            font-weight: 400;
+            color : rgb(238, 238, 238);
+        }
+        .section11{
+            height : 130vh;
+            width: 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec11_content{
+            height : 250px;
+            width : 650px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 200px;
+        }
+        .sec11con_head{
+            height : 40px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        .sec11conhead_text{
+            font-size: 28px;
+            font-weight: 500;
+            color: rgb(23, 26, 32);
+        }
+        .sec11model3_para{
+            height : 20px;
+            width : 350px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        .sec11model3para_text{
+            font-size: 15px;
+            font-weight: 400;
+            color:  rgb(57, 60, 65)
+        }
+        .sec11_btn1{
+            margin-top: 30px;
+            margin-left: 80px;
+            height : 35px;
+            width : 180px;
+            border-radius: 5px;
+            background-color: transparent;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            position: relative;
+        }
+        
+        .sec11_btn1:hover{
+            color: black;
+            background-color: white;
+        }
+        .sec11btn1_cate{
+            position: absolute;
+            height : 25px;
+            width : 80px;
+            /* border : 1px solid; */
+            background-color: white;
+            left : 100px;
+            top: 30px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec11_btn1:hover .sec11btn1_cate{
+            visibility: visible;
+        }
+        .sec11btn1_text{
+            margin-top: 3px;
+            color : black
+        }
+        .sec11_btn2{
+            height : 35px;
+            width : 180px;
+            border-radius: 5px;
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            border: transparent;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            position: relative;
+        }
+        .sec11_btn2:hover{
+            color: black;
+            background-color: white;
+        }
+        .sec11btn2_cate{
+            position: absolute;
+            height : 25px;
+            width : 100px;
+            /* border : 1px solid; */
+            background-color: white;
+            left : 100px;
+            top: 30px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec11_btn2:hover .sec11btn2_cate{
+            visibility: visible;
+        }
+        .sec11_image{
+            height : 250px;
+            width : 670px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 200px;
+            background-image: url(./images/Model-Y-Order-Hero-Desktop-Mobile-Global.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec11_para{
+            height : 70px;
+            width : 900px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 150px;
+        }
+        .sec11_underline{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec11_underline:hover{
+            text-decoration: 2px underline;
+        }
+        .sec11para_text{
+            font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            text-align: center;
+        }
+        .sec11_ul{
+            width : max-content;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 80px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(92, 94, 98);
+        }
+        .sec11_list{
+            list-style: none;
+            display: inline;
+            margin-left: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec11_teslacate{
+            height : 20px;
+            width : 180px;
+            /* border : 1px solid; */
+            background-color: white;
+            position: absolute;
+            left : 20px;
+            top : 25px;
+            text-align: center;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+
+        }
+        .sec11_list:hover .sec11_teslacate{
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <nav class = "sec1_navbar">
+            <div class = "sec1_logo"></div>
+            <ul class = "sec1_ul1">
+                <li class = "list1">Model S
+                    <div class = "models_category">
+                        <h5 class = "modelscate_text">Model S</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model 3
+                    <div class = "model3_category">
+                        <h5 class = "model3cate_text">Model 3</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model X
+                    <div class = "modelx_category">
+                        <h5 class = "modelxcate_text">Model X</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model Y
+                    <div class = "modely_category">
+                        <h5 class = "modelycate_text">Model Y</h5>
+                    </div>
+                </li>
+                <li class = "list1">Solar Roof
+                    <div class = "solarroof_category">
+                        <h5 class = "solarroofcate_text">Solar Roof</h5>
+                    </div>
+                </li>
+                <li class = "list1">Solar Panels
+                    <div class = "solarpanel_category">
+                        <h5 class = "solarpanelcate_text">Solar Panels</h5>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "sec1_ul2">
+                <li class = "list2">Shop
+                    <div class = "shop_category">
+                        <h5 class = "shopcate_text">Shop</h5>
+                    </div>
+                </li>
+                <li class = "list2">Account
+                    <div class = "account_category">
+                        <h5 class = "accountcate_text">Account</h5>
+                    </div>
+                </li>
+                <li class = "list2">Menu
+                    <div class = "menu_category">
+                        <h5 class = "menu_text">Menu</h5>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class = "sec1name">
+            <div class = "sec1name1">
+                <h1 class = "sec1name1_text">Model Y</h1>
+            </div>
+            <div class = "sec1name2">
+                <p class = "sec1name2_text"><span class = "sec1_underline">Schedule a Demo Drive</span></p>
+            </div>
+        </div>
+        <div class = "sec1bottom_content">
+            <div class = "sec1bottomcon a1">
+                <!-- <div class = "a1head1_icon"><i class="fa-solid fa-gauge guage1"></i></div> -->
+                <div class = "a1_head1">
+                    
+                    <h2 class = "a1head1_text">76 cu ft</h2>
+                </div>
+                <div class = "a1_head2">
+                    <h5 class = "a1head2_text">Cargo Space</h5>
+                </div>
+            </div>
+            <div class = "sec1bottomcon a2">
+                <div class = "a2_head1">
+                    <h2 class = "a2head1_text">350 mi</h2>
+                </div>
+                <div class = "a2_head2">
+                    <h5 class = "a2head2_text">Range (EPA est.)</h5>
+                </div>
+            </div>
+            <div class = "sec1bottomcon a3">
+                <div class = "a3_head1">
+                    <h2 class = "a3head1_text">AWD</h2>
+                </div>
+                <div class = "a3_head2">
+                    <h5 class = "a3head2_text">Dual Motor</h5>
+                </div>
+            </div>
+            
+            <button class = "sec1bottom_btn">Order Now</button>
+        </div>
+        <div class = "sec1bottom_parentcircle">
+            <div class= "circle_gradient"></div>
+            <div class = "circle"><i class="fa-regular fa-comment-dots dots1"></i></div>
+        </div>
+        <div class = "moving_icon"><i class="fa-solid fa-angle-down angdown"></i></div>
+    </div>
+    <div class = "section2">
+        <div class = "sec2_boxes_b1">
+            
+            <div class = "sec2_box1">
+                <div class = "sec2box1_info1">
+                    <div class = "info1_head1">
+                        <h3 class = "info1head1_text">Impact Protection</h3>
+                    </div>
+                    <div class = "info1_longline">
+                        <div class = "info1_line1"></div>
+                        <div class = "info1_line2"></div>
+                    </div>
+                    <div class = "info1_smallcircle"></div>
+                </div>
+                <div class = "sec2box1_info2">
+                    <div class = "info2_head1">
+                        <h3 class = "info2head1_text">Rigid Structure</h3>
+                    </div>
+                    <div class = "info2_longline">
+                        <div class = "info2_line1"></div>
+                        <div class = "info2_line2"></div>
+                    </div>
+                    <div class = "info2_smallcircle"></div>
+                </div>
+                <div class = "sec2box1_info3">
+                    <div class = "info3_smallcircle"></div>
+                    <div class = "info3_longline">
+                        <div class = "info3_line1"></div>
+                        <div class = "info3_line2"></div>
+                    </div>
+                    <div class = "info3_head1">
+                        <h3 class = "info3head1_text">Very Low Rollover Risk</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "sec2_boxes_b2">
+            <div class = "sec2boxesb2_content">
+                <div class = "sec2boxesb2con_1">
+                    <div class = "sec2boxescon_head1">
+                        <h3 class = "sec2boxesconhead1_text">Safety</h3>
+                    </div>
+                    <div class = "sec2boxescon_head2">
+                        <h3 class = "sec2boxesconhead2_text">Designed for Safety</h3>
+                    </div>
+                    <div class = "sec2boxescon_para1">
+                        <p class= "sec2boxesconpara1_text">Safety is the most important part of every <br>Tesla. We design our vehicles to <span class = "sec2_underline1">exceed <br>safety standards.</span></p>
+                    </div>
+                </div>
+                <div class = "sec2boxesb2con_2">
+                    <div class = "sec2boxesb2con2_head">
+                        <h3 class = "sec2boxesb2con2head_text">5-Star Rating</h3>
+                    </div>
+                    <div class = "sec2boxesb2con2_para">
+                        <p class = "sec2boxesb2con2para_text">Model Y achieved NHTSA 5-star safety<br> ratings in every category and subcategory.</p>
+                    </div>
+                </div>
+                <div class = "sec2boxesb2con_3">
+                    <div class = "sec2boxesb2con3_head">
+                        <h3 class = "sec2boxesb2con3head_text">Top Safety Pick+</h3>
+                    </div>
+                    <div class = "sec2boxesb2con3_para">
+                        <p class = "sec2boxesb2con3para_text">Model Y received the IIHS Top Safety Pick+<br> award, with top ratings in all crashworthiness <br>and front crash prevention categories.</p>
+                    </div>
+                </div>
+            </div>
+            <button class = "sec2_btn1">Order Now
+                <div class = "sec2btn1_cate">
+                    <h5 class = "sec2btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+            <button class = "sec2_btn2">View Inventory
+                <div class = "sec2btn2_cate">
+                    <h5 class = "sec2btn2cate_text">View Inventory</h5>
+                </div>
+           </button>
+        </div>
+       
+
+    </div>
+    <div class = "section3">
+        <div class = "sec3_bottomcontent">
+            <div class = "sec3bottomcon_box1">
+                <h3 class = "sec3bottomconbox1_head1">Utility</h3>
+                <h3 class = "sec3bottomconbox1_head2">A Place For Everything</h3>
+                <button class = "sec3_btn1">Order Now
+                    <div class = "sec3btn1_cate">
+                        <h5 class = "sec3btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+                <button class = "sec3_btn2">View Inventory
+                    <div class = "sec3btn2_cate">
+                        <h5 class = "sec3btn2cate_text">View Inventory</h5>
+                    </div>
+               </button>
+                
+            </div>
+            <div class = "sec3bottomcon_box2">
+                <p class = "sec3bottomconbox2_para">Model Y provides maximum versatility—able to carry 7 passengers and their cargo.<br> Each second row seat folds flat independently, creating flexible storage for skis,<br> furniture, luggage and more. The liftgate opens to a low trunk floor that makes <br>loading and unloading easy and quick.<span class = "sec3_underline1">Chat with a Tesla Advisor</span>  to learn more<br> about Model Y or <span class = "sec3_underline2">schedule a demo drive</span> today.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class = "section4">
+        <div class = "sec4_images"></div>
+        <div class = "sec4_bottomcontent">
+            <div class = "sec4bottomcon_slide1">
+                <div class = "sec4bottomconslide1_circles">
+                    <div class = "sec4bottomconslide1circles_1"></div>
+                    <div class = "sec4bottomconslide1circles_2"></div>
+                </div>
+                <p class = "sec4bottomconslide1_para">Versatile seating and storage for cargo and passengers</p>
+            </div>
+            <div class = "sec4bottomcon_slide2">
+                <div class = "sec4bottomconslide1_circles">
+                    <div class = "sec4bottomconslide2circles_1"></div>
+                    <div class = "sec4bottomconslide2circles_2"></div>
+                </div>
+                <p class = "sec4bottomconslide2_para">Room for up to seven with optional third row</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section5">
+        <div class = "sec5_imagecontent">
+            <div class = "sec5imgcon_content">
+                <div class = "sec5imgconcon e1">
+                    <div class = "e1_iconhead">
+                        
+                        <div class =  "e1head">
+                            <h3 class = "e1head_text">2</h3>
+                        </div>
+                    </div>
+                    <p class = "e1_para">Independent motors digitally control<br> torque to the front and rear wheels </p>
+                </div>
+                <div class = "sec5imgconcon e2">
+                    <div class = "e2_iconhead">
+                        <div class = "e2_icon"><i class="fa-solid fa-gauge-high high1"></i></div>
+                        <h3 class = "e2_headtext">3.5 ms</h3>
+                    </div>
+                    <p class = "e2_paratext">Quickest acceleration—from zero to 60 <br>mph* in as little as 3.5 seconds</p>
+                </div>
+                <div class = "sec5imgconcon e3">
+                    <div class = "e3_icon"><i class="fa-solid fa-cloud-sun sun1"></i></div>
+                    <p class = "e3_paratext">Capable in rain, snow, mud and off-road<br> with superior traction control</p>
+                </div>
+            </div>
+        </div>
+        <div class = "sec5_bottomcontent">
+            <div class = "sec5bottomcon_box1">
+                <h3 class = "sec5bottomconbox1_head1">All-Wheel Drive</h3>
+                <h3 class = "sec5bottomconbox1_head2">Dual Motor</h3>
+                <button class = "sec5_btn1">Order Now
+                    <div class = "sec5btn1_cate">
+                        <h5 class = "sec5btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+                <button class = "sec5_btn2">View Inventory
+                    <div class = "sec5btn2_cate">
+                        <h5 class = "sec5btn2cate_text">View Inventory</h5>
+                    </div>
+               </button>
+                
+            </div>
+            <div class = "sec5bottomcon_box2">
+                <p class = "sec5bottomconbox2_para">Tesla All-Wheel Drive has two ultra-responsive, independent electric motors that <br>digitally control torque to the front and rear wheels—for far better handling, traction <br>and stability control. Model Y is capable in rain, snow, mud and off-road.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class = "section6">
+        
+        <div class = "sec6_boxes_b1">
+            <div class = "sec6vidcon_content"></div>
+        </div>
+        <div class = "sec6_boxes_b2">
+            <div class = "sec6boxesb2_content">
+                <div class = "sec6boxesb2con_1">
+                    <div class = "sec6boxescon_head1">
+                        <h3 class = "sec6boxesconhead1_text">Range</h3>
+                    </div>
+                    <div class = "sec6boxescon_head2">
+                        <h3 class = "sec6boxesconhead2_text">Go Anywhere</h3>
+                    </div>
+                    <div class = "sec6boxescon_para1">
+                        <p class= "sec6boxesconpara1_text"> Model Y is fully electric, so you never need to <br>visit a gas station again. If you charge <br>overnight at home, you can wake up to a full <br>battery every morning. And when you’re on <br>the road, it’s easy to plug in along the way—<br>at any public station or with the Tesla<br> charging network. We currently have over<br> 40,000 Superchargers worldwide, with six <br>new locations opening every week. <span class = "sec6_underline1">Chat with<br> a Tesla Advisor </span>to learn more about Model 3<br> or <span class = "sec6_underline2">schedule a demo drive</span> today.</p>
+                    </div>
+                </div>
+            </div>
+            <button class = "sec6_btn1">Order Now
+                <div class = "sec6btn1_cate">
+                    <h5 class = "sec6btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+            <button class = "sec6_btn2">View Inventory
+                <div class = "sec6btn2_cate">
+                    <h5 class = "sec6btn2cate_text">View Inventory</h5>
+                </div>
+           </button>
+        </div>  
+
+    </div>
+    <div class = "section7">
+        <div class = "sec7_content">
+            <div class = "sec7con_info1">
+                <div class = "sec7coninfo1_head1">
+                    <h3 class = "sec7coninfo1head1_text">360°</h3>
+                </div>
+                <div class = "sec7coninfo1_para">
+                    <p class = "sec7coninfo1para_text">Rear, side and forward-facing cameras <br>provide maximum visibility</p>
+                </div>
+            </div>
+            <div class = "sec7con_info2">
+                <div class = "sec7coninfo2_head1">
+                    <h3 class = "sec7coninfo2head1_text">250 m</h3>
+
+                </div>
+                <div class = "sec7coninfo2_para">
+                    <p class = "sec7coninfo2para_text">Powerful visual processing at up to 250 <br>meters of range</p>
+
+                </div>
+
+            </div>
+            <div class = "sec7con_info3">
+                <div class = "sec7coninfo3_head1">
+                    <div class = "sec7coninfo3head_circle">
+                        <div class = "sec7coninfo3headcircle_circle1"></div>
+                        <div class = "sec7coninfo3headcircle_circle2"></div>
+                    </div>
+                </div>
+                <div class = "sec7coninfo3_para">
+                    <p class = "sec7coninfo3para_text">Tesla Vision detects nearby cars, helps <br>prevent potential collisions and assists <br>with parking</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class = "section8">
+        <div class = "sec8_bottomcontent">
+            <div class = "sec8bottomcon_box1">
+                <h3 class = "sec8bottomconbox1_head1">Autopilot</h3>
+                <h3 class = "sec8bottomconbox1_head2">Future of Driving</h3>
+                <button class = "sec8_btn1">Order Now
+                    <div class = "sec8btn1_cate">
+                        <h5 class = "sec8btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+                <button class = "sec8_btn2">View Inventory
+                    <div class = "sec8btn2_cate">
+                        <h5 class = "sec8btn2cate_text">View Inventory</h5>
+                    </div>
+               </button>
+            </div>
+            <div class = "sec8bottomcon_box2">
+                <p class = "sec8bottomconbox2_para">Autopilot's advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section9">
+        <div class = " sec9_topcontent">
+            <div class = "sec9topcon_info">
+                <div class = "sec9topconinfo f1">
+                    <h3 class = "f1_head">15 inch</h3>
+                    <p class = "f1_para">A touchscreen display designed to<br> improve over time</p>
+                </div>
+                <div class = "sec9topconinfo f2">
+                    <div class = "f2_icon"><i class="fa-solid fa-wifi wifi1"></i></div>
+                    <p class = "f2_para">Over-the-air software updates introduce <br>new features, functionality and<br> performance</p>
+                </div>
+                <div class = "sec9topconinfo f3">
+                    <div class = "f3_icon"><i class="fa-solid fa-car-side car1"></i></div>
+                    <p class = "f3_para">An expansive Glass Roof provides more<br> headroom and UV protection</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "sec9_bottomcontent">
+            <div class = "sec9bottomcon_box1">
+                <h3 class = "sec9bottomconbox1_head1">Interior</h3>
+                <h3 class = "sec9bottomconbox1_head2">Built Around the Driver</h3>
+                <button class = "sec9_btn1">Order Now
+                    <div class = "sec9btn1_cate">
+                        <h5 class = "sec9btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+                <button class = "sec9_btn2">View Inventory
+                    <div class = "sec9btn2_cate">
+                        <h5 class = "sec9btn2cate_text">View Inventory</h5>
+                    </div>
+               </button>
+            </div>
+            <div class = "sec9bottomcon_box2">
+                <p class = "sec9bottomconbox2_para">With an elevated seating position and low dash, the driver has a commanding view <br>of the road ahead. The interior of Model Y is simple and clean, with a 15-inch touch <br>screen, immersive sound system and an expansive all-glass roof that creates extra <br>headroom and provides a seamless view of the sky.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section10">
+        <div class = "sec10_box1"></div>
+        <div class = "sec10_box2">
+            <div class = "sec10box2_head">
+                <h3 class = "sec10box2head_text">Model Y  Specs</h3>
+                <div class = "sec10box2btns">
+                    <button class = "sec10box2_btn1">Performance</button>
+                    <button class = "sec10box2_btn2">Long Range AWD</button>
+                </div>
+                <div class = "sec10box2_specs">
+                    <div class = "sec10box2specs g1">
+                        <div class = "g1_boxes h1">
+                            <div class = "h1_topline"></div>
+                            <h3 class = "h1_head1">Battery</h3>
+                            <p class = "h1_para">Long Range</p>
+                        </div>
+                        <div class = "g1_boxes h2">
+                            <div class = "h2_topline"></div>
+                            <h3 class = "h2_head1">Weight</h3>
+                            <p class = "h2_para">4,098 lbs</p>
+                        </div>
+                        <div class = "g1_boxes h3">
+                            <div class = "h3_topline"></div>
+                            <h3 class = "h3_head1">*Acceleration</h3>
+                            <p class = "h3_para">3.5 s 0-60 mph<br>with rollout subtracted</p>
+                        </div>
+                        <div class = "g1_boxes h4">
+                            <div class = "h4_topline"></div>
+                            <h3 class = "h4_head1">Max Cargo Volume</h3>
+                            <p class = "h4_para">76 cu ft</p>
+                        </div>
+                        <div class = "g1_boxes h5">
+                            <div class = "h5_topline"></div>
+                            <h3 class = "h5_head1">Range</h3>
+                            <p class = "h5_para">303 miles (EPA est.)</p>
+                        </div>
+                        <div class = "g1_boxes h6">
+                            <div class = "h6_topline"></div>
+                            <h3 class = "h6_head1">Displays</h3>
+                            <p class = "h6_para">15" Center Touchscreen</p>
+                        </div>
+                        <div class = "g1_boxes h7">
+                            <div class = "h7_topline"></div>
+                            <h3 class = "h7_head1">Drive</h3>
+                            <p class = "h7_para">Dual Motor All-Wheel Drive</p>
+                        </div>
+                        <div class = "g1_boxes h8">
+                            <div class = "h8_topline"></div>
+                            <h3 class = "h8_head1">Supercharging Max/Payment <br>Type</h3>
+                            <p class = "h8_para">250 kW Max; Pay Per Use</p>
+                        </div>
+                        <div class = "g1_boxes h9">
+                            <div class = "h9_topline"></div>
+                            <h3 class = "h9_head1">Seating</h3>
+                            <p class = "h9_para">Up to 5</p>
+                        </div>
+                        <div class = "g1_boxes h10">
+                            <div class = "h10_topline"></div>
+                            <h3 class = "h10_head1">Onboard Charger Max</h3>
+                            <p class = "h10_para">11.5 kW max (48A)</p>
+                        </div>
+                        <div class = "g1_boxes h11">
+                            <div class = "h11_topline"></div>
+                            <h3 class = "h11_head1">Wheels</h3>
+                            <p class = "h11_para">21"</p>
+                        </div>
+                        <div class = "g1_boxes h12">
+                            <div class = "h12_topline"></div>
+                            <h3 class = "h12_head1">Warranty</h3>
+                            <p class = "h12_para">Basic Vehicle - 4 years or <br>50,000 mi, whichever comes<br> first<br>Battery & Drive Unit - 8 years<br> or 120,000 mi, whichever <br>comes first</p>
+                        </div>
+                    </div>
+                    <div class = "sec10box2specs g2">
+                        <div class = "g2_boxes i1">
+                            <div class = "i1_topline"></div>
+                            <h3 class = "i1_head1">Battery</h3>
+                            <p class = "i1_para">Long Range</p>
+                        </div>
+                        <div class = "g2_boxes i2">
+                            <div class = "i2_topline"></div>
+                            <h3 class = "i2_head1">Weight</h3>
+                            <p class = "i2_para">4,363 lbs</p>
+                        </div>
+                        <div class = "g2_boxes i3">
+                            <div class = "i3_topline"></div>
+                            <h3 class = "i3_head1">*Acceleration</h3>
+                            <p class = "i3_para">4.8 s 0-60 mph</p>
+                        </div>
+                        <div class = "g2_boxes i4">
+                            <div class = "i4_topline"></div>
+                            <h3 class = "i4_head1">Max Cargo Volume</h3>
+                            <p class = "i4_para">76 cu ft</p>
+                        </div>
+                        <div class = "g2_boxes i5">
+                            <div class = "i5_topline"></div>
+                            <h3 class = "i5_head1">Range</h3>
+                            <p class = "i5_para">330 miles (EPA est.)</p>
+                        </div>
+                        <div class = "g2_boxes i6">
+                            <div class = "i6_topline"></div>
+                            <h3 class = "i6_head1">Displays</h3>
+                            <p class = "i6_para">15" Center Touchscreen</p>
+                        </div>
+                        <div class = "g2_boxes i7">
+                            <div class = "i7_topline"></div>
+                            <h3 class = "i7_head1">Drive</h3>
+                            <p class = "i7_para">Dual Motor All-Wheel Drive</p>
+                        </div>
+                        <div class = "g2_boxes i8">
+                            <div class = "i8_topline"></div>
+                            <h3 class = "i8_head1">Supercharging Max/Payment <br>Type</h3>
+                            <p class = "i8_para">250 kW Max; Pay Per Use</p>
+                        </div>
+                        <div class = "g2_boxes i9">
+                            <div class = "i9_topline"></div>
+                            <h3 class = "i9_head1">Seating</h3>
+                            <p class = "i9_para">Up to 7</p>
+                        </div>
+                        <div class = "g2_boxes i10">
+                            <div class = "i10_topline"></div>
+                            <h3 class = "i10_head1">Onboard Charger Max</h3>
+                            <p class = "i10_para">11.5 kW max (48A)</p>
+                        </div>
+                        <div class = "g2_boxes i11">
+                            <div class = "i11_topline"></div>
+                            <h3 class = "i11_head1">Wheels</h3>
+                            <p class = "i11_para">19" or 20"</p>
+                        </div>
+                        <div class = "g2_boxes i12">
+                            <div class = "i12_topline"></div>
+                            <h3 class = "i12_head1">Warranty</h3>
+                            <p class = "i12_para">Basic Vehicle - 4 years or <br>50,000 mi, whichever comes<br> first<br>Battery & Drive Unit - 8 years<br> or 120,000 mi, whichever <br>comes first</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "sec10_bottombtns">
+            <button class = "sec10bottombtn1">Owner's Manual
+                <div class = "sec10bottombtn1_cate">
+                    <h5 class = "sec10bottombtn1cate_text">Owner's Manual</h5>
+                </div>
+            </button>
+            <button class = "sec10bottombtn2">Compare
+                <div class = "sec10bottombtn2_cate">
+                    <h5 class = "sec10bottombtn2cate_text">Compare</h5>
+                </div>
+
+            </button>
+        </div>
+    </div>
+    <div class = "section11">
+        <div class = "sec11_content">
+            <div class = "sec11con_head">
+                <h3 class = "sec11conhead_text">Order Model Y</h3>
+            </div>
+            
+            <button class = "sec11_btn1">Order Now
+                <div class = "sec11btn1_cate">
+                    <h5 class = "sec11btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+            <button class = "sec11_btn2">View Inventory
+                <div class = "sec11btn2_cate">
+                    <h5 class = "sec11btn2cate_text">View Inventory</h5>
+                </div>
+            </button>
+        </div>
+        <div class = "sec11_image"></div>
+        <div class = "sec11_para">
+            <p class = "sec11para_text">Certain high data usage vehicle features require at least Standard Connectivity, including maps, navigation <br>and voice commands. Access to features that use cellular data and third-party licenses are subject to <br>change. <span class = "sec19_underline">Learn more about Standard Connectivity and any limitations.</span></p>
+        </div>
+        <ul class = "sec11_ul">
+            <li class = "sec11_list">Tesla © 2023
+                <div class = "sec11_teslacate">
+                    <h5 class = "sec11teslacate_text">CopyRight 2023 Tesla Motors</h5>
+                </div>
+            </li>
+            <li class = "sec11_list">Privacy & Legal</li>
+            <li class = "sec11_list">Vehicle Recalls</li>
+            <li class = "sec11_list">Contact</li>
+            <li class = "sec11_list">Careers</li>
+            <li class = "sec11_list">News</li>
+            <li class = "sec11_list">Engage</li>
+            <li class = "sec11_list">Locations</li>
+        </ul>
+        
+    </div>
+</body>
+</html>

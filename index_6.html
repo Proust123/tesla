@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SOLAR ROOF</title>
+
+    <style>
+
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+            
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/Solar-Roof-Hero-Desktop-Global.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec1_navbar{
+            height : 80px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+            /* position: fixed; */
+        }
+        .sec1_logo{
+            height : 20px;
+            width : 150px;
+            /* border : 1px solid; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            margin-top: 57px;
+            background-image: url(./images/PngItem_1068175.png);
+            color: white;
+            background-position: center;
+            background-size: cover;
+        }
+        .list1{
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+            /* border : 1px solid; */
+            cursor: pointer;
+            border-radius: 3px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            position: relative;
+            color : white;
+            font-weight: 500;
+        }
+        .list1:hover{
+            background-color: gray;
+        }
+        .list2{
+            list-style: none;
+            display: inline-block;
+            margin-left: 30px;
+            border-radius: 3px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            cursor: pointer;
+            position: relative;
+            color : white;
+            font-weight: 500;
+        }
+        .list2:hover{
+            background-color: gray;
+        }
+        .sec1_ul1{
+            /* border : 1px solid; */
+            width : max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            margin-top: 55px;
+        }
+        .models_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .models_category{
+            visibility: visible;
+        }
+        .modelscate_text{
+            font-weight: 100;
+            text-align: center;
+            color : black
+        }
+        .model3_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .model3_category{
+            visibility: visible;
+        }
+        .model3cate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .modelx_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .modelx_category{
+            visibility: visible;
+        }
+        .modelxcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .modely_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .modely_category{
+            visibility: visible;
+        }
+        .modelycate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .solarroof_category{
+            height : 20px;
+            width : 75px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .solarroof_category{
+            visibility: visible;
+        }
+        .solarroofcate_text{
+            font-weight: 100;
+            text-align: center;
+            color : black
+        }
+        .solarpanel_category{
+            height : 20px;
+            width : 75px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list1:hover .solarpanel_category{
+            visibility: visible;
+        }
+        .solarpanelcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .sec1_ul2{
+            /* border : 1px solid; */
+            width : max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left:50px;
+            margin-top: 55px;
+
+        }
+        .shop_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .shop_category{
+            visibility: visible;
+        }
+        .shopcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .account_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .account_category{
+            visibility: visible;
+        }
+        .accountcate_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .menu_category{
+            height : 20px;
+            width : 55px;
+            /* border : 1px solid; */
+            position: absolute;
+            left :10px;
+            background-color: white;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .1s;
+            transition-timing-function: linear;
+        }
+        .list2:hover .menu_category{
+            visibility: visible;
+        }
+        .menu_text{
+            font-weight: 100;
+            text-align: center;
+            color: black;
+        }
+        .sec1name{
+            height : 110px;
+            width : 300px;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin: auto;
+            /* margin-top: 30px; */
+        }
+        .sec1name1{
+            height : 60px;
+            width : 250px;
+            /* border: 1px solid; */
+            margin: auto;
+        }  
+        .sec1name2{
+            height : 30px;
+            width : 250px;
+            /* border: 1px solid; */
+            margin: auto;
+            /* margin-top: 10px; */
+            padding: 1px;
+        }
+        .sec1name1_text{
+            font-size: 45px;
+            text-align: center;
+            /* margin-top: 10px; */
+            font-weight: 500;
+            color: white;
+            
+        }
+        .sec1name2_text{
+            font-size: 17px;
+            text-align: center;
+            color : white;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+        .sec1_underline{
+            text-decoration: underline;
+        }
+        .sec1_underline:hover{
+            text-decoration: 2px underline;
+
+        }
+        .sec1bottom_content{
+            height : 100px;
+            width : 900px;
+            /* border  : 1px solid white; */
+            margin-top: 270px;
+            margin-left: 200px;
+        }
+        .sec1bottomcon{
+            height : 100%;
+            width : 200px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .a1_head1{
+            height : 30px;
+            width : 90px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 25px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .a1head1_icon{
+            height : 30px;
+            width : 35px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        .panel1{
+            color : white;
+            font-size: 25px;
+            /* margin-left: 30px; */
+        }
+        .a1head1_text{
+            color : white;
+            text-align: center;
+            margin-top: -5px;
+            font-size: 20px;
+        }
+        .a1_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-left: 70px;
+            margin-top: -5px;
+        }
+        .a1head2_text{
+            color : white;
+            text-align: center;
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 13px;
+        }
+        .a2_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 15px;
+            margin-left: 70px;
+        }
+        .a2head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a2_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            /* margin-top: -10px  */
+            margin-left: 55px;
+        }
+        .a2head2_text{
+            color : white;
+            text-align: center;
+        }
+        .a3_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: 15px auto;
+        }
+        .a3head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a3_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: -10px auto;
+        }
+        .a3head2_text{
+            color : white;
+            text-align: center;
+        }
+        .a4_head1{
+            height : 30px;
+            width : 100px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: 15px auto;
+        }
+        .a4head1_text{
+            color : white;
+            text-align: center;
+        }
+        .a4_head2{
+            height : 30px;
+            width : 120px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: -10px auto;
+        }
+        .a4head2_text{
+            color : white;
+            text-align: center;
+        }
+        .sec1bottom_btn{
+            height : 40px;
+            width : 210px;
+            border : 3px solid white;
+            background-color: transparent;
+            border-radius: 5px;
+            color : white;
+            font-size: 17px;
+            margin-top: 30px;
+            margin-left: 50px;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+            cursor: pointer;
+        }
+        .sec1bottom_btn:hover{
+            background-color: white;
+            color : black
+        }
+        .sec1bottom_parentcircle{
+            height : 70px;
+            width : 70px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: relative;
+            margin-left: 1200px;
+            margin-top: -60px;
+            /* background-color: white; */
+            padding: 1px;
+            position: fixed;
+            z-index: 100;
+        }
+        .circle{
+            height : 50px;
+            width : 50px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            top : 9px;
+            left : 9px;
+            
+        }
+        .circle_gradient{
+            height : 50px;
+            width : 50px;
+            /* border : 1px solid; */
+            border-radius: 50%;
+            position: absolute;
+            top : 9px;
+            left : 9px;
+            background-color: rgba(0, 132, 255, 0.623);
+            animation-name: spreading;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            
+        }
+        @keyframes spreading {
+            0%{
+                transform: scale(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        .dots1{
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .moving_icon{
+            height : 20px;
+            width : 22px;
+            /* border : 1px solid; */
+            margin-top: 30px;
+            margin-left: 643px;
+            animation-name: movingicon1;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        .angdown{
+            font-size: 22px;
+            color: white;
+        }
+        @keyframes movingicon1 {
+            0%{
+                margin-top: 30px;
+            }
+            25%{
+                margin-top: 38px;
+            }
+            50%{
+                margin-top: 30px;
+            }
+            75%{
+                margin-top: 34px;
+            }
+            87%{
+                margin-top: 30px;
+            }
+            100%{
+                margin-top: 30px;
+            }
+        }
+        .section2{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px
+        }
+        .sec2_topcontent{
+            height : 320px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/Solar-Roof-Design-Desktop-Global.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec2_bottomcontent{
+            height : 300px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec2bottomcontent_box1{
+            height : 100%;
+            width : 530px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec2bottomcontentbox1_head1{
+            font-size:17px ;
+            font-weight:400 ;
+            color: rgb(23, 26, 32) ;
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+        .sec2bottomcontentbox1_head2{
+            font-size: 30px;
+            font-weight:500 ;
+            color: rgb(23, 26, 32) ;
+            margin-left: 150px;
+            
+        }
+        .sec2bottomcontent_box2{
+            height : 100%;
+            width : 800px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec2bottomcontentbox2_para{
+            font-size:15px ;
+            font-weight: 400;
+            color : rgb(57, 60, 65);
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        .sec2_underline1{
+            text-decoration: underline;
+        }
+        .sec2_underline1:hover{
+            text-decoration: 2px underline;
+        }
+        .sec2_btn1{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 150px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec2btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn1:hover .sec2btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec2btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec2_btn2{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-left: 150px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec2btn2_cate{
+            height : 25px;
+            width : 250px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 100px;
+            top : 40px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec2_btn2:hover .sec2btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec2btn2cate_text{
+            margin-top: 3px;
+        }
+        .section3{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px
+        }
+        .sec3_box1{
+            height : 100%;
+            width : 410px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec3box1_head1{
+            font-size:18px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .sec3box1_head2{
+            font-size: 30px;
+            font-weight:500 ;
+            color : rgb(23, 26, 32);
+            
+            margin-left: 50px;
+        }
+        .sec3box1_para{
+            font-size: 16px;
+            font-weight: 400;
+            color :rgb(57, 60, 65) ;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+        .sec3_box2{
+            height : 100%;
+            width : 930px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Solar-Roof-Energy-Desktop-Global.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec3_btn1{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 180px;
+            left: 50px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec3btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn1:hover .sec3btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec3btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec3_btn2{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 200px;
+            left: 50px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec3btn2_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 100px;
+            top : 40px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec3_btn2:hover .sec3btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec3btn2cate_text{
+            margin-top: 3px;
+        }
+        .section4{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px
+        }
+        .sec4_box2{
+            height : 100%;
+            width : 410px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec4box2_head1{
+            font-size:18px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .sec4box2_head2{
+            font-size: 30px;
+            font-weight:500 ;
+            color : rgb(23, 26, 32);
+            
+            margin-left: 50px;
+        }
+        .sec4box2_para{
+            font-size: 16px;
+            font-weight: 400;
+            color :rgb(57, 60, 65) ;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+        .sec4_box1{
+            height : 100%;
+            width : 930px;
+            border : 1px solid;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .sec4_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 220px;
+            left: 50px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec4_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec4btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec4_btn1:hover .sec4btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec4btn1cate_text{
+            margin-top: 3px;
+        }
+        .section5{
+            height : 40vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec5_box1{
+            height : 100%;
+            width : 420px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top; 
+        }
+        .sec5_box2{
+            height : 100%;
+            width : 920px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top; 
+        }
+        .sec5box1_head1{
+            font-size: 17px;
+            font-weight: 400;
+            color :  rgb(23, 26, 32);
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+        .sec5box1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+            
+            margin-left: 120px;
+        }
+        .sec5_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 40px;
+            left: 120px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec5_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec5btn1_cate{
+            height : 25px;
+            width : 90px;
+            /* border : 1px solid; */
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec5_btn1:hover .sec5btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec5btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec5_underline{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec5_underline:hover{
+            text-decoration: 2px underline;
+        }
+        .sec5box2_para{
+            font-size: 17px;
+            font-weight: 400;
+            color :  rgb(57, 60, 65);
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        .section6{
+            height : 120vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px
+        }
+        .sec6_video{
+            height : 500px;
+            width : 1250px;
+            border : 1px solid;
+            border-radius: 15px;
+            padding: 1px;
+            margin: auto;
+        }
+        .sec6_bottomcontent{
+            height : 300px;
+            width : 100%;
+            /* border: 1px solid; */
+            padding: 1px;
+        }
+        .sec6bottomcon{
+            height : 150px;
+            width : 350px;
+            border-top : 3px solid;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 70px;
+        }
+        .b1{
+            margin-left: 150px;
+            animation-name: textchange1;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes textchange1 {
+            0%{
+                opacity: 1;
+            }
+            33%{
+                opacity: 1;
+            }
+            34%{
+                opacity: .4;
+            }
+            66%{
+                opacity: .4;
+            }
+            67%{
+                opacity: .4;
+            }
+            100%{
+                opacity: .4;
+            }
+        }
+        .b2{
+            margin-left: 20px;
+            animation-name: textchange2;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes textchange2 {
+            0%{
+                opacity: .4;
+            }
+            33%{
+                opacity: .4;
+            }
+            34%{
+                opacity: 1;
+            }
+            66%{
+                opacity: 1;
+            }
+            67%{
+                opacity: .4;
+            }
+            100%{
+                opacity: .4;
+            }
+        }
+        .b3{
+            margin-left: 20px;
+            animation-name: textchange3;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes textchange3 {
+            0%{
+                opacity: .4;
+            }
+            33%{
+                opacity: .4;
+            }
+            34%{
+                opacity: .4;
+            }
+            66%{
+                opacity: .4;
+            }
+            67%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .b1_head{
+            font-size: 17px;
+            font-weight: 500;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+            
+        }
+        .b1_para{
+            font-size: 15px;
+            font-weight: 400;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+        }
+        .b2_head{
+            font-size: 17px;
+            font-weight: 500;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+            
+        }
+        .b2_para{
+            font-size: 15px;
+            font-weight: 400;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+        }
+        .b3_head{
+            font-size: 17px;
+            font-weight: 500;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+            
+        }
+        .b3_para{
+            font-size: 15px;
+            font-weight: 400;
+            color :   rgb(23, 26, 32);
+            margin-top: 10px;
+        }
+        .section7{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+        }
+        .sec7_box1{
+            height : 100%;
+            width : 410px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec7box1_head1{
+            font-size:18px;
+            font-weight: 400;
+            color : rgb(23, 26, 32);
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .sec7box1_head2{
+            font-size: 30px;
+            font-weight:500 ;
+            color : rgb(23, 26, 32);
+            
+            margin-left: 50px;
+        }
+        .sec7box1_para{
+            font-size: 16px;
+            font-weight: 400;
+            color :rgb(57, 60, 65) ;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+        .sec7_box2{
+            height : 100%;
+            width : 930px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Inverter_V8_D.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec7_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 120px;
+            left: 50px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec7_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec7btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec7_btn1:hover .sec7btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec7btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec7_underline1{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec7_underline1{
+            text-decoration: 2px underline;
+        }
+        .section8{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec8_topcontent{
+            height : 400px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/SR-tesla-app-D.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sec8_bottomcontent{
+            height : 220px;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        .sec8bottomcontent_box1{
+            height : 100%;
+            width : 480px;
+            /* border:  1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec8bottomcontent_box2{
+            height : 100%;
+            width : 855px;
+            /* border:  1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec8bottomcontentbox1_head1{
+            font-size: 17px ;
+            font-weight:400 ;
+            color : rgb(23, 26, 32);
+            margin-top: 50px;
+            margin-left: 150px;
+        }
+        .sec8bottomcontentbox1_head2{
+            font-size: 28px;
+            font-weight: 500;
+            color : rgb(23, 26, 32);
+            
+            margin-left: 150px;
+        }
+        .sec8_btn1{
+            height : 40px;
+            width : 200px;
+            font-size: 14px;
+            font-weight: 500;
+            top: 20px;
+            left: 150px;
+            background: transparent;
+            border : 3px solid;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec8_btn1:hover{
+            background-color: black;
+            color : white
+        }
+        .sec8btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 200px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec8_btn1:hover .sec8btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec8bottomcontentbox2_para{
+            font-size: 16px ;
+            font-weight:400 ;
+            color : rgb(57, 60, 65);
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .section9{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+            background-color: black;
+        }
+        .sec9_box1{
+            height : 100%;
+            width : 750px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            /* background-image: url(./images/PanelMeasure_desktop2x.png);
+            background-position: center;
+            background-size: cover; */
+        }
+        #sec9img{
+            margin-top: 120px;
+        }
+        .sec9_box2{
+            height : 100%;
+            width : 590px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec9box2_head{
+            font-size: 28px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 120px;
+           
+        }
+        .sec9box2_specs{
+            height : 420px;
+            width : 500px;
+            /* border: 1px solid white; */
+            padding: 1px;
+            margin-top: 30px ;
+        }
+        .sec9box2specs{
+            height : 80px;
+            width : 240px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            vertical-align: top;
+            display: inline-block;
+        }
+        .c5{
+            height : 100px;
+        }
+        .c1_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c2_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c3_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c4_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c5_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c6_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c7_line{
+            height : 1px;
+            width : 40px;
+            background-color: rgba(255, 255, 255, 0.493);
+            margin-top: 3px;
+        }
+        .c1_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c1_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c2_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c2_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c3_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c3_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c4_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c4_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c5_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c5_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c6_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c6_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .c7_head1{
+            font-size: 15px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        .c7_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);  
+        }
+        .section10{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            background-color: black;
+        }
+        .sec10_head1{
+            font-size: 28px ;
+            font-weight:500 ;
+            color : rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 120px;
+            
+        }
+        .sec10_para{
+            font-size: 15px ;
+            font-weight:400 ;
+            color :  rgb(238, 238, 238);
+            text-align: center;
+            margin-top: 10px;
+        }
+        .sec10_btn1{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 520px;
+            background: transparent;
+            border : 3px solid white;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec10_btn1:hover{
+            background-color: white;
+            color : black
+        }
+        .sec10btn1_cate{
+            height : 25px;
+            width : 90px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 300px;
+            top : 5px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec10_btn1:hover .sec10btn1_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        .sec10btn1cate_text{
+            margin-top: 3px;
+        }
+        .sec10_btn2{
+            height : 40px;
+            width : 300px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            margin-left: 520px;
+            border: transparent;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.205);
+            color: white;
+        }
+        .sec10_btn2:hover{
+            background-color: rgba(255, 255, 255, 0.473);
+        }
+        .sec10btn2_cate{
+            height : 25px;
+            width : 250px;
+            border : 1px solid;
+            background-color: white;
+            position: absolute;
+            left : 100px;
+            top : 40px;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .sec10_btn2:hover .sec10btn2_cate{
+            visibility: visible;
+            background-color: white;
+            color : black
+        }
+        
+        .sec10btn2cate_text{
+            margin-top: 3px;
+        }
+        .sec10_head2{
+            font-size: 14px ;
+            font-weight:400 ;
+            color : rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 20px;  
+        }
+        .sec10_underline{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sec10_underline:hover{
+            text-decoration: 2px underline;
+        }
+        .sec10_ul{
+            width : max-content;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 210px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.753);
+        }
+        .sec10_list{
+            list-style: none;
+            display: inline;
+            margin-left: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .sec10_teslacate{
+            height : 20px;
+            width : 180px;
+            /* border : 1px solid; */
+            background-color: white;
+            position: absolute;
+            left : 20px;
+            top : 25px;
+            text-align: center;
+            visibility: hidden;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+
+        }
+        .sec10_list:hover .sec10_teslacate{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <nav class = "sec1_navbar">
+            <div class = "sec1_logo"></div>
+            <ul class = "sec1_ul1">
+                <li class = "list1">Model S
+                    <div class = "models_category">
+                        <h5 class = "modelscate_text">Model S</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model 3
+                    <div class = "model3_category">
+                        <h5 class = "model3cate_text">Model 3</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model X
+                    <div class = "modelx_category">
+                        <h5 class = "modelxcate_text">Model X</h5>
+                    </div>
+                </li>
+                <li class = "list1">Model Y
+                    <div class = "modely_category">
+                        <h5 class = "modelycate_text">Model Y</h5>
+                    </div>
+                </li>
+                <li class = "list1">Solar Roof
+                    <div class = "solarroof_category">
+                        <h5 class = "solarroofcate_text">Solar Roof</h5>
+                    </div>
+                </li>
+                <li class = "list1">Solar Panels
+                    <div class = "solarpanel_category">
+                        <h5 class = "solarpanelcate_text">Solar Panels</h5>
+                    </div>
+                </li>
+            </ul>
+            <ul class = "sec1_ul2">
+                <li class = "list2">Shop
+                    <div class = "shop_category">
+                        <h5 class = "shopcate_text">Shop</h5>
+                    </div>
+                </li>
+                <li class = "list2">Account
+                    <div class = "account_category">
+                        <h5 class = "accountcate_text">Account</h5>
+                    </div>
+                </li>
+                <li class = "list2">Menu
+                    <div class = "menu_category">
+                        <h5 class = "menu_text">Menu</h5>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class = "sec1name">
+            <div class = "sec1name1">
+                <h1 class = "sec1name1_text">Solar Roof</h1>
+            </div>
+            <div class = "sec1name2">
+                <p class = "sec1name2_text"><span class = "sec1_underline">Schedule a Virtual Consultation</span></p>
+            </div>
+        </div>
+        <div class = "sec1bottom_content">
+            <div class = "sec1bottomcon a1">
+                <div class = "a1head1_icon"><i class="fa-solid fa-solar-panel panel1"></i></div>
+                <!-- <div class = "a1_head1">
+                    
+                    <h2 class = "a1head1_text">76 cu ft</h2>
+                </div> -->
+                <div class = "a1_head2">
+                    <h5 class = "a1head2_text">Beautiful <br>Solar</h5>
+                </div>
+            </div>
+            <div class = "sec1bottomcon a2">
+                <div class = "a2_head1">
+                    <h2 class = "a2head1_text">25-Year</h2>
+                </div>
+                <div class = "a2_head2">
+                    <h5 class = "a2head2_text">Tile <br>Warranty</h5>
+                </div>
+            </div>
+            <div class = "sec1bottomcon a3">
+                <div class = "a3_head1">
+                    <h2 class = "a3head1_text">24/7</h2>
+                </div>
+                <div class = "a3_head2">
+                    <h5 class = "a3head2_text">Outage <br>Protection</h5>
+                </div>
+            </div>
+            
+            <button class = "sec1bottom_btn">Order Now</button>
+        </div>
+        <div class = "sec1bottom_parentcircle">
+            <div class= "circle_gradient"></div>
+            <div class = "circle"><i class="fa-regular fa-comment-dots dots1"></i></div>
+        </div>
+        <div class = "moving_icon"><i class="fa-solid fa-angle-down angdown"></i></div>
+    </div>
+    <div class = "section2">
+        <div class = "sec2_topcontent"></div>
+        <div class = "sec2_bottomcontent">
+            <div class = "sec2bottomcontent_box1">
+                <h3 class = "sec2bottomcontentbox1_head1">Design</h3>
+                <h3 class = "sec2bottomcontentbox1_head2">Complement Your Home’s <br>Aesthetic</h3>
+                <button class = "sec2_btn1">Order Now
+                    <div class = "sec2btn1_cate">
+                        <h5 class = "sec2btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+                <button class = "sec2_btn2">Schedule a Virtual Consultation
+                    <div class = "sec2btn2_cate">
+                        <h5 class = "sec2btn2cate_text">Schedule a Virtual Consultation</h5>
+                    </div>
+               </button>
+            </div>
+            <div class = "sec2bottomcontent_box2">
+                <p class = "sec2bottomcontentbox2_para">Install Solar Roof and power your home with a fully integrated solar and energy <br>storage system. The glass solar tiles and steel roofing tiles look great up close and <br>from the street, complementing your home’s natural styling. <span class = "sec2_underline1">Schedule a virtual <br>consultation</span> with a Tesla Advisor to learn more.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section3">
+        <div class = "sec3_box1">
+            <h3 class = "sec3box1_head1">Energy Storage</h3>
+            <h3 class = "sec3box1_head2">Protection Against <br>Outages</h3>
+            <p class = "sec3box1_para">Powerwall is a compact home battery that is <br>bundled with Solar Roof, providing you with <br>24/7 energy security. It stores the energy <br>you produce with Solar Roof so you can <br>power your home anytime—at night or <br>during an outage.</p>
+            <button class = "sec3_btn1">Order Now
+                <div class = "sec3btn1_cate">
+                    <h5 class = "sec3btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+            <button class = "sec3_btn2">Learn More
+                <div class = "sec3btn2_cate">
+                    <h5 class = "sec3btn2cate_text">Learn More</h5>
+                </div>
+           </button>
+        </div>
+        <div class = "sec3_box2"></div>
+    </div>
+    <div class = "section4">
+        <div class = "sec4_box1"></div>
+        <div class = "sec4_box2">
+            <h3 class = "sec4box2_head1">Durability</h3>
+            <h3 class = "sec4box2_head2">Take on the Elements</h3>
+            <p class = "sec4box2_para">Solar Roof is comprised of both glass solar<br> tiles and steel roofing tiles. Glass solar tiles <br>produce energy, while architectural-grade <br>steel tiles add longevity and corrosion<br> resistance to your roof. Both are durable, <br>strong and engineered for all-weather <br>protection. With a 25-year warranty, Solar <br>Roof will continue to produce clean energy<br> and protect your home for decades to come.</p>
+            <button class = "sec4_btn1">Order Now
+                <div class = "sec4btn1_cate">
+                    <h5 class = "sec4btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+        </div>
+        
+    </div>
+    <div class = "section5">
+        <div class = "sec5_box1">
+            <h3 class = "sec5box1_head1">Installation</h3>
+            <h3 class = "sec5box1_head2">Trusted Expertise</h3>
+            <button class = "sec5_btn1">Order Now
+                <div class = "sec5btn1_cate">
+                    <h5 class = "sec5btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+        </div>
+        <div class = "sec5_box2">
+            <p class = "sec5box2_para">Our in-house team of energy professionals has installed nearly 4.0 GW of solar across <br>approximately 480,000 roofs—cumulatively generating over 25.0 TWhs of clean energy. From <br>design to power on, we take care of everything. <span class = "sec5_underline">Chat with a Tesla Advisor </span>to ask any questions <br>about Solar Roof.</p>
+        </div>
+    </div>
+    <div class = "section6">
+        <div class = "sec6_video"></div>
+        <div class = "sec6_bottomcontent">
+            <div class = "sec6bottomcon b1">
+                <h3 class = "b1_head">Design</h3>
+                <p class = "b1_para">Aerial imagery and 3D modeling determine <br>your custom design</p>
+            </div>
+            <div class = "sec6bottomcon b2">
+                <h3 class = "b2_head">Installation</h3>
+                <p class = "b2_para">Our integrated design enables quick tile and <br>Powerwall installation</p>
+            </div>
+            <div class = "sec6bottomcon b3">
+                <h3 class = "b2_head">Power On</h3>
+                <p class = "b2_para">Final cleanup is completed before system <br>activation</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section7">
+        <div class = "sec7_box1">
+            <h3 class = "sec7box1_head1">Efficiency</h3>
+            <h3 class = "sec7box1_head2">Maximum Solar <br>Production</h3>
+            <p class = "sec7box1_para">Generate the most energy possible, even on <br>roofs with complicated angles and <br>intermittent sunlight. Glass solar tiles and<br> architectural-grade steel tiles, vent covers <br>and ridge caps come together to form a <br>roof that is both durable and powerful. With <br>Tesla Solar Inverter, your fully integrated <br>system is safe, reliable and outage ready. <br>And built-in connectivity ensures<span class = "sec7_underline1">Tesla Solar<br> Inverter</span>  continues to improve with each <br>over-the-air software update.</p>
+            <button class = "sec7_btn1">Order Now
+                <div class = "sec7btn1_cate">
+                    <h5 class = "sec7btn1cate_text">Order Now</h5>
+                </div>
+            </button>
+        </div>
+        <div class = "sec7_box2"></div>
+    </div>
+    <div class = "section8">
+        <div class = "sec8_topcontent"></div>
+        <div class = "sec8_bottomcontent">
+            <div class = "sec8bottomcontent_box1">
+                <h3 class = "sec8bottomcontentbox1_head1">Control</h3>
+                <h3 class = "sec8bottomcontentbox1_head2">Monitor and Optimize</h3>
+                <button class = "sec8_btn1">Order Now
+                    <div class = "sec8btn1_cate">
+                        <h5 class = "sec8btn1cate_text">Order Now</h5>
+                    </div>
+                </button>
+            </div>
+            <div class = "sec8bottomcontent_box2">
+                <p class = "sec8bottomcontentbox2_para">With the Tesla app, you can monitor your energy production in real time. Control <br>your system from anywhere with instant alerts and remote access.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "section9">
+        <div class = "sec9_box1">
+            <img id = "sec9img" src="./images/PanelMeasure_desktop2x.png" width = "640px" alt="">
+        </div>
+        <div class = "sec9_box2">
+            <h3 class = "sec9box2_head">Solar Roof Specs</h3>
+            <div class = "sec9box2_specs">
+                <div class = "sec9box2specs c1">
+                    <div class = "c1_line"></div>
+                    <h3 class = "c1_head1">Tile and Power Warranty</h3>
+                    <h3 class = "c1_head2">25 years</h3>
+                </div>
+                <div class = "sec9box2specs c2">
+                    <div class = "c2_line"></div>
+                    <h3 class = "c2_head1">Fire Rating</h3>
+                    <h3 class = "c2_head2">Class A (highest rating)</h3>
+                </div>
+                <div class = "sec9box2specs c3">
+                    <div class = "c3_line"></div>
+                    <h3 class = "c3_head1">Solar Glass Tiles</h3>
+                    <h3 class = "c3_head2">72 W</h3>
+                </div>
+                <div class = "sec9box2specs c4">
+                    <div class = "c4_line"></div>
+                    <h3 class = "c4_head1">Hail Rating</h3>
+                    <h3 class = "c4_head2">Class 3</h3>
+                </div>
+                <div class = "sec9box2specs c5">
+                    <div class = "c5_line"></div>
+                    <h3 class = "c5_head1">Steel Tiles</h3>
+                    <h3 class = "c5_head2">Corrosion and weather <br>resistant</h3>
+                </div>
+                <div class = "sec9box2specs c6">
+                    <div class = "c6_line"></div>
+                    <h3 class = "c6_head1">Roof Pitch</h3>
+                    <h3 class = "c6_head2">≥ 2:12</h3>
+                </div>
+                <div class = "sec9box2specs c7">
+                    <div class = "c7_line"></div>
+                    <h3 class = "c7_head1">Wind Rating</h3>
+                    <h3 class = "c7_head2">Class F (highest rating)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "section10">
+        <h3 class = "sec10_head1">Transform Your Roof</h3>
+        <p class = "sec10_para">Order now or talk to a Tesla Advisor if you have any <br>questions</p>
+        <button class = "sec10_btn1">Order Now
+            <div class = "sec10btn1_cate">
+                <h5 class = "sec10btn1cate_text">Order Now</h5>
+            </div>
+        </button><br>
+        <button class = "sec10_btn2">Schedule a Virtual Consultation
+            <div class = "sec10btn2_cate">
+                <h5 class = "sec10btn2cate_text">Schedule a Virtual Consultation</h5>
+            </div>
+       </button>
+       <h3 class = "sec10_head2"><span class = "sec10_underline">Get Updates</span></h3>
+       <ul class = "sec10_ul">
+        <li class = "sec10_list">Tesla © 2023
+            <div class = "sec10_teslacate">
+                <h5 class = "sec10teslacate_text">CopyRight 2023 Tesla Motors</h5>
+            </div>
+        </li>
+        <li class = "sec10_list">Privacy & Legal</li>
+        <li class = "sec10_list">Vehicle Recalls</li>
+        <li class = "sec10_list">Contact</li>
+        <li class = "sec10_list">Careers</li>
+        <li class = "sec10_list">News</li>
+        <li class = "sec10_list">Engage</li>
+        <li class = "sec10_list">Locations</li>
+    </ul>
+    </div>
+
+</body>
+</html>
